@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { pattern1 } from './data.js'
-import Matrix from './Matrix.js'
+import { init } from './canvasHelpers'
+import ChromeBoisDomain from './ChromeBoisDomain.js'
 
-ReactDOM.render(<Matrix values={pattern1} />, document.getElementById('root'));
+init()
+
+ReactDOM.render(<ChromeBoisDomain />, document.getElementById('root'));
